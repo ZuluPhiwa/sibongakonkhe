@@ -16,7 +16,7 @@ const About = () => {
         </div>
 
 
-      <div className='p-12 grid md:grid-cols-2'>
+      <div className=' p-6 md:p-12 grid md:grid-cols-2'>
 
         <div className=' md:pl-12'>
           <img src={Protective} alt="" className='rounded-md shadow-md h-[90%]'/>
@@ -36,7 +36,7 @@ const About = () => {
           <p className='text-2xl px-6 md:px-16 py-5 font-extrabold '>
            Vision
           </p>
-          <p className=' px-6 md:px-16 text-justify'>
+          <p className='pb-0 md:pb-2 px-6 md:px-16 text-justify'>
           To be a first class suppliers and service maintenance provider towards 2022 and beyond, drawing customers from all over the country. We intend achieving this by being sensitive to the needs of our customers 
           and making a meaningful contribution by providing an excellent service delivery in the medical industry.     </p>
         </div>

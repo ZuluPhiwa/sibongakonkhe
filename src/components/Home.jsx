@@ -22,7 +22,7 @@ const Home = () => {
 
         <p className=' text-5xl  font-inter font-extrabold  text-blue-900 my-8 '>
         One-stop shop for all your supply needs.
-        </p>
+        </p>  
         <p className='mb-8   font-semibold'>
           We are suppliers of building material, hardware, pipes, plumbing, electrical, tools, fencing, protective clothing,
            cleaning materials, medical supplies, medical equipment, laboratory equipment, consumables, chemicals, hospital furniture, linen, educational equipment, teaching aid and more.
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
     </div>
     
-    <div className=''>
+    <div className='hidden md:block'>
       <img src={officeone } alt="banner" className=' h-[100%]' />
     </div>
 </div>
@@ -101,7 +101,7 @@ const Home = () => {
 
 
 
-<div className=' bg-gray-100 py-4'>
+{/* <div className=' bg-gray-100 py-4'>
         <p className='text-center font-bold text-2xl font-sans mt-8 '>
         Our partners
 
@@ -434,7 +434,7 @@ const Home = () => {
 </div>
 </div>
       </div>
-</div>
+</div> */}
 
     </div>
 
