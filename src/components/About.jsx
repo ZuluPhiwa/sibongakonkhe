@@ -31,12 +31,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className=' grid md:grid-cols-2 p-12 bg-gray-100 '>
+      <div className=' grid md:grid-cols-2 p-6 md:p-12 bg-gray-100 '>
       <div className='my-auto'>
-          <p className='text-2xl px-6 md:px-16 py-5 font-extrabold '>
+          <p className='text-2xl px-0 md:px-16 py-5 font-extrabold '>
            Vision
           </p>
-          <p className='pb-0 md:pb-2 px-6 md:px-16 text-justify'>
+          <p className='md:pb-0 pb-6 px-0 md:px-16 text-justify'>
           To be a first class suppliers and service maintenance provider towards 2022 and beyond, drawing customers from all over the country. We intend achieving this by being sensitive to the needs of our customers 
           and making a meaningful contribution by providing an excellent service delivery in the medical industry.     </p>
         </div>

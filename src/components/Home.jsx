@@ -13,7 +13,7 @@ const Home = () => {
   return (
 
     <div>
-    <div className=' h-[90vh] px-4 bg-gray-100'>
+    <div className=' h-[60vh] md:h-[90vh] px-4 bg-gray-100'>
 
 
 <div className=' px-6 md:px-12 grid md:grid-cols-2 gap-4'>
