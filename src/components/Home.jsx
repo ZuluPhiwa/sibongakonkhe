@@ -24,7 +24,7 @@ const Home = () => {
         One-stop shop for all your supply needs.
         </p>
         <p className='mb-8   font-semibold'>
-          Suppliers of building material, hardware, pipes, plumbing, electrical, tools, fencing, protective clothing,
+          We are suppliers of building material, hardware, pipes, plumbing, electrical, tools, fencing, protective clothing,
            cleaning materials, medical supplies, medical equipment, laboratory equipment, consumables, chemicals, hospital furniture, linen, educational equipment, teaching aid and more.
         </p>
         <div className='flex '>
@@ -51,7 +51,7 @@ const Home = () => {
       Our Understanding of the client’s needs 
       </p>
 
-      <p className='mx-96 text-center  font-thin font-sans my-4'>
+      <p className=' mx-6 md:mx-96 text-center  font-thin font-sans my-4'>
       Obtaining an understanding of a client’s activities and needs is of utmost importance
        to us, as it enables us to execute our services in the most efficient and cost effective manner. Our philosophy and business approach is that no one solution is good for two different clients or for two different customer needs. We, at all times, endeavor to provide products to specific guidelines from our customers.                                                                                                 
       </p>
