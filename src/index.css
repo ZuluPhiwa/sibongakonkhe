@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ font-family: 'poppins';
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../public/fonts/Poppins.ttf");
+  }
+
+  @font-face {
+    font-family: "Ghiga";
+    src: url("../public/fonts/Ghiga.otf");
+  }
+
+  @font-face {
+    font-family: "MuseoSans";
+    src: url("../public/fonts/MuseoSans.otf");
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter.ttf");
+  }
