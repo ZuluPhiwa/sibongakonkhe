@@ -46,10 +46,10 @@ const Navbar = () => {
        Sibongakonkhe
         </h1>
             <ul className=' pt-24 font-bold text-white'>
-               <li className='mx-6 pb-4'> <Link to="/sibongakonkhe/">Home</Link> </li>
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/about">About</Link> </li>
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/services">Services</Link> </li> 
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/contact">Contact</Link> </li> 
+               <li className='mx-6 pb-4'> <Link to="/sibongakonkhe/" onClick={closeMenu}>Home</Link> </li>
+               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/about" onClick={closeMenu}>About</Link> </li>
+               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/services" onClick={closeMenu}>Services</Link> </li> 
+               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/contact" onClick={closeMenu}>Contact</Link> </li> 
                
             </ul> 
             </div>

@@ -25,7 +25,7 @@ const About = () => {
           <p className='text-2xl mx-auto  py-5 font-extrabold '>
             Mission
           </p>
-          <p className='mx-auto pr-16 text-justify'>
+          <p className='mx-auto pr-6 md:pr-16  text-justify'>
           Sibongakonkhe Investments (PTY) Ltd is best service providers, pioneer best business practice across the globe with a customer-orientation and quality approach, offering exceptionally a wide range of services just-in-time.
           </p>
         </div>
@@ -33,10 +33,10 @@ const About = () => {
 
       <div className=' grid md:grid-cols-2 p-12 bg-gray-100 '>
       <div className='my-auto'>
-          <p className='text-2xl px-16 py-5 font-extrabold '>
+          <p className='text-2xl px-6 md:px-16 py-5 font-extrabold '>
            Vision
           </p>
-          <p className='px-16 text-justify'>
+          <p className=' px-6 md:px-16 text-justify'>
           To be a first class suppliers and service maintenance provider towards 2022 and beyond, drawing customers from all over the country. We intend achieving this by being sensitive to the needs of our customers 
           and making a meaningful contribution by providing an excellent service delivery in the medical industry.     </p>
         </div>
