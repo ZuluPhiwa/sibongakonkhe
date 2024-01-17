@@ -13,7 +13,7 @@ const Home = () => {
   return (
 
     <div>
-    <div className=' h-[80vh] md:h-[90vh] px-4 bg-gray-100'>
+    <div className=' h-[90%] md:h-[90vh] px-4 bg-gray-100'>
 
 
 <div className=' px-6 md:px-12 grid md:grid-cols-2 gap-4'>
@@ -24,8 +24,8 @@ const Home = () => {
         One-stop shop for all your supply needs.
         </p>  
         <p className='mb-8   font-semibold'>
-          We are suppliers of building material, hardware, pipes, plumbing, electrical, tools, fencing, protective clothing,
-           cleaning materials, medical supplies, medical equipment, laboratory equipment, consumables, chemicals, hospital furniture, linen, educational equipment, teaching aid and more.
+          We are suppliers of Building Material, Hardware, Pipes, Plumbing, Electrical, Tools, Fencing, Protective Clothing,
+           Cleaning Materials, Medical Supplies, Medical Equipment, Laboratory Equipment, Consumables, Chemicals, Hospital Furniture, Linen, Educational Equipment, Teaching Aid and More.
         </p>
         <div className='flex '>
           <button className='bg-blue-900 p-2 md:p-4 mr-4 uppercase text-white font-bold'>

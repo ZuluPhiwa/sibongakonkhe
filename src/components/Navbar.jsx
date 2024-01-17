@@ -1,58 +1,77 @@
-import React,{useState} from 'react'
-import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
+import React, {useState,useEffect} from 'react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'
+import logo2 from '../assets/logo2.jpg'
 const Navbar = () => {
-
+  const [color, setColor] = useState('#1e3a8a');
+  const [textColor, setTextColor] = useState('white');
   const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-  const HandleNav =()=> 
-  {
-      setNav (!nav);
-      if(!setNav)
-      {
-        document.body.style.overflow = 'hidden'
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor('#1e3a8a');
+        setTextColor('#ffffff');
+      } else {
+        setColor('#1e3a8a');
+        setTextColor('#ffffff');
       }
-      else
-      {
-        document.body.style.overflow = 'scroll'
-      }
-  }
-  const closeMenu =()=> setNav(false);
+    };
+    window.addEventListener('scroll', changeColor);
+  }, []);
+
+
   return (
-    <div className=''>
-        <div className='hidden md:flex justify-between shadow-md bg-blue-900 p-4'>
-            <h1 className='uppercase text-red-500 font-bold'>
-             <Link to="/sibongakonkhe/">Sibongakonkhe</Link>    
-            </h1>
+    <div  style={{ backgroundColor: `${color}` }} className='fixed  left-0 top-0 w-full z-10 ease-in duration-300'>
+        <div className='justify-between mx-2 md:mx-8 p-4 flex '>
+            <p className=' uppercase '><Link to="/sibongakonkhe/"><img src={logo2} alt=""  className='h-[40px] rounded-full'/></Link></p>
 
 
-
-            <ul className='flex font-bold text-white'>
-                <li className='mx-4'> <Link to="/sibongakonkhe/">Home</Link> </li>
-                <li className='mx-4'> <Link to="/sibongakonkhe/about">About</Link> </li>
-                <li className='mx-4'> <Link to="/sibongakonkhe/services">Services</Link> </li>
-                <li className='mx-4'> <Link to="/sibongakonkhe/contact">Contact</Link> </li>
-
+            <ul style={{ color: `${textColor}` }} className='hidden font-bold md:flex'>
+            <li className='mx-4 my-2'> <Link to="/sibongakonkhe/">Home</Link>  </li>
+                <li className='mx-4 my-2'> <Link to="/sibongakonkhe/about">About</Link>  </li>
+                <li className='mx-4 my-2'> <Link to="/sibongakonkhe/services">Services</Link> </li>
+                <li className='mx-4 my-2'> <Link to="/sibongakonkhe/contact">Contact</Link> </li>
             </ul>
-        </div>
 
-        
-        <div onClick={HandleNav} className='block  md:hidden '>
-              { nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={ 25}/>}
-              
-            </div>
-            <div className={nav ? 'fixed h-full left-0 top-0 bg-[#000300] uppercase border-r w-[65%] border-r-gray-900 ease-in-out duration-500 z-10' : "fixed left-[-100%] z-10"}>
-            <h1 className=' text-white mt-8 mx-6 font-bold font-krinkesregular text-xl'>
-       Sibongakonkhe
-        </h1>
-            <ul className=' pt-24 font-bold text-white'>
-               <li className='mx-6 pb-4'> <Link to="/sibongakonkhe/" onClick={closeMenu}>Home</Link> </li>
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/about" onClick={closeMenu}>About</Link> </li>
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/services" onClick={closeMenu}>Services</Link> </li> 
-               <li className='mx-6 pb-4'><Link to="/sibongakonkhe/contact" onClick={closeMenu}>Contact</Link> </li> 
-               
-            </ul> 
-            </div>
+
+            <div onClick={handleNav} className='block my-2 sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={22} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={22} style={{ color: `${textColor}` }} />
+          )}
+        </div>
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center text-white w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link to="/sibongakonkhe/">Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+            <Link to="/sibongakonkhe/about">About</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+            <Link to="/sibongakonkhe/services">Services</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+            <Link to="/sibongakonkhe/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+        </div>
+ 
+
     </div>
   )
 }

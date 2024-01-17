@@ -1,11 +1,12 @@
 import React from 'react'
-import Protective from '../assets/protective.jpg'
+import Protective from '../assets/offices2.jpg'
 import officeone from '../assets/unnamed.jpg'
+
 
 const About = () => {
   return (
     <div >
-        <div className='py-10 '>
+        <div className='pt-24 pb-5 '>
             <h1 className='  font-extrabold text-center text-4xl'>
                 Who we are
             </h1>
@@ -19,7 +20,7 @@ const About = () => {
       <div className=' p-6 md:p-12 grid md:grid-cols-2'>
 
         <div className=' md:pl-12'>
-          <img src={Protective} alt="" className='rounded-md shadow-md h-[90%]'/>
+          <img src={Protective} alt="" className=' h-[90%]'/>
         </div>
         <div className='my-auto'>
           <p className='text-2xl mx-auto  py-5 font-extrabold '>

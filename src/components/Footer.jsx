@@ -24,7 +24,7 @@ const Footer = () => {
  </div>
 
     <p className=' block  text-center pb-4'>
-       &copy; {new Date().getFullYear()} Sibongakonkhe.
+       &copy; {new Date().getFullYear()} Sibongakonkhe Investments.
     </p>
     </div>
   )

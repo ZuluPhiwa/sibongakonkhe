@@ -39,7 +39,7 @@ const WhatWeDo = () => {
     ]
   return (
     <div className='bg-gray-100 '>
-                <div className='py-10 '>
+                <div className='pt-24 pb-5 '>
             <h1 className='  font-extrabold text-center text-4xl'>
                 What we supply
             </h1>

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='p-4 '>
         
-        <div className='py-10 '>
+        <div className='pb-10 pt-20 '>
             <h1 className='  font-extrabold text-center text-4xl'>
                 Contact Us
             </h1>
